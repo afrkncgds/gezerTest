@@ -1,0 +1,105 @@
+.header-root{
+  box-shadow: 0px 2px 4px 0px #F1F1F1;
+  .header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 13px auto 13px;
+
+
+
+  }
+  .logo-container{
+    span{
+      font-family: Nunito Sans;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 44px;
+      letter-spacing: 0px;
+      color:#5E81D1;
+      text-align: left;
+      &.dark{
+        color:#2255CA;
+
+      }
+    }
+  }
+  .account-container{
+    display: flex;
+    align-items: center;
+    .account-block,.login-block{
+      padding: 8px 16px;
+
+    }
+    .account-block{
+      span{
+        font-family: Nunito Sans;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #FF8D27;
+        cursor: pointer;
+
+      }
+    }
+    .login-block{
+      background: #FF8D27;
+      margin: 0 0 0 8px;
+      border-radius: 32px;
+      span{
+        font-family: Nunito Sans;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #FFFFFF;
+        cursor: pointer;
+
+
+
+      }
+    }
+
+  }
+  .header-submenu-wrapper{
+
+    .sub-menu-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li{
+        padding: 0 0 13px;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 0px;
+          height: 1px;
+          bottom: 0;
+          background: white;
+
+        }
+
+        a{
+          padding: 4px 16px 0 16px;
+          text-align: center;
+          color: black;
+        }
+        &:hover{
+          &:before{
+            width: 100%;
+            background: red;
+            transition: 0.2s linear;
+          }
+
+        }
+
+      }
+    }
+  }
+}
